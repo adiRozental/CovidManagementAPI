@@ -3,13 +3,12 @@
 
 when  running the project the following window will open:
 
-![image](https://github.com/adiRozental/HadasimProject/assets/92113102/d8fd0cc3-78cf-45d0-b018-75a36c60adcd)
-
+![image](https://github.com/adiRozental/HadasimProject/assets/92113102/0d5fe7a0-87cd-47f8-b69c-844086e1b103)
 you can choose each api to use and activate the different get and post options.
 for example:
 In memberAPI click on Post and then click on the Try it now button:
 
-![image](https://github.com/adiRozental/HadasimProject/assets/92113102/300a2841-1779-4b64-aa1a-a22dcb8c13df)
+![image](https://github.com/adiRozental/HadasimProject/assets/92113102/789ed80d-575d-4150-bd62-3607e5e80a2d)
 
 then insert values accordingly, and click on execute. for example:
 
@@ -30,8 +29,8 @@ Do the same in order to activate the rest.
  
  You will also need mysql server as a database, notice to have the following versions:
  
-![image](https://github.com/adiRozental/HadasimProject/assets/92113102/94a1aae0-8311-4a47-aa7b-24fdf90526cd)
- 
+![image](https://github.com/adiRozental/HadasimProject/assets/92113102/d4b86acc-abe0-478c-9c69-59f9049df18c)
+
  and create the tables:
 CREATE TABLE Member (
     ID INT PRIMARY KEY AUTO_INCREMENT,
