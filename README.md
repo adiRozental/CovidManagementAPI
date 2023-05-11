@@ -32,3 +32,34 @@ Do the same in order to activate the rest.
  
 ![image](https://github.com/adiRozental/HadasimProject/assets/92113102/94a1aae0-8311-4a47-aa7b-24fdf90526cd)
  
+ and create the tables:
+CREATE TABLE Member (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Birthdate DATE NOT NULL,
+    City VARCHAR(50) NOT NULL,
+    Street VARCHAR(50) NOT NULL,
+    Number VARCHAR(10) NOT NULL,
+    Phone VARCHAR(20) NOT NULL,
+    smartPhone VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE VaccineDetails (
+    MemberID INT NOT NULL,
+    Date DATE NOT NULL,
+    Producer VARCHAR(50) NOT NULL,
+    Primary key(MemberID, Date)
+    FOREIGN KEY (MemberID) REFERENCES Member(ID)
+);
+
+CREATE TABLE IllnessDetails (
+    MemberID INT NOT NULL,
+    illDate DATE NOT NULL,
+    RecoveryDate DATE NOT NULL,
+    primary key(MemberID, illDate)
+    FOREIGN KEY (MemberID) REFERENCES Member(ID)
+);
+
+it should look like that:
+![image](https://github.com/adiRozental/HadasimProject/assets/92113102/b6a341d2-fcbf-47f8-9836-39dfc2216c00)
